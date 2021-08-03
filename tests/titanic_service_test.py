@@ -1,5 +1,4 @@
 import unittest
-import os
 
 from titanic.models.titanic_service import TitanicService
 
@@ -7,12 +6,12 @@ from titanic.models.titanic_service import TitanicService
 class TitanicServiceTest(unittest.TestCase):
 
     mock = TitanicService()
+
     def test_new_model(self) :
-        # self.mock.new_model('train.csv')
-        # print(os.getcwd())
+        # print(self.mock.new_model("train"))
         print(self.mock.new_model("test"))
 
-    def count_survived_dead(self):
+    def count_survived_dead(self, ):
         return []
 
     def create_train(self):
